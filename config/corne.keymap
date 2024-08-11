@@ -10,11 +10,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&sk {
+    release-after-ms = <900>;
+    quick-release;
+};
+
 / {
-    &sk {
-        release-after-ms = <900>;
-        quick-release;
-    };
     
     behaviors {
         dual_shift: dual_shift {
